@@ -1,10 +1,14 @@
 *, *::after, *::before {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(41, 35, 35);
 }
 
 body {
-    background-color: rgb(233, 162, 255);
+    background-image: url('madera5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +19,12 @@ body {
 .clock {
     width: 300px;
     height: 300px;
-    background-color: rgba(255, 255, 255, .9);
+    background-image: url('marmol.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     border-radius: 50%;
-    border: 5px solid rgb(255, 115, 255);
+    border: 5px solid rgb(41, 35, 35);
     position: relative;
 }
 
@@ -60,7 +67,7 @@ body {
 .clock::after {
     content: '';
     position: absolute;
-    background-color: rgb(39, 0, 66);
+    background-color: rgb(41, 35, 35);
     z-index: 11;
     width: 15px;
     height: 15px;
@@ -75,19 +82,19 @@ body {
 .clock .hand.second {
     width: 3px;
     height: 45%;
-    background-color: indigo;
+    background-color: rgb(255, 255, 255);
 }
 
 .clock .hand.minute {
     width: 7px;
     height: 40%;
-    background-color: rgb(39, 0, 66);
+    background-color: rgb(41, 35, 35);
 }
 
 
 .clock .hand.hour {
     width: 10px;
     height: 35%;
-    background-color: rgb(39, 0, 66);
+    background-color: rgb(41, 35, 35);
 }
 
